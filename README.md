@@ -10,16 +10,16 @@
     Here is the step-by-step instruction on how this project works.
 
 1. Visit this URL (https://secure-temple-59315.herokuapp.com/)
-<img src='./app/public/assets/readme/url.png'>
+<img src='./app/public/assets/readme/url.PNG'>
 
 2. Click the Take Survey Button to be directed to the survey page.
-<img src='./app/public/assets/readme/main.png'>
+<img src='./app/public/assets/readme/main.PNG'>
 
 3. Once in the survey page, fill in the required field (name, photo url).
-<img src='./app/public/assets/readme/required_fields.png'>
+<img src='./app/public/assets/readme/required_fields.PNG'>
 
 4. Take the survey!
-<img src='./app/public/assets/readme/survey.png'>
+<img src='./app/public/assets/readme/survey.PNG'>
 
 5. Once done, click on the submit button to find out who is your best match!
-<img src='./app/public/assets/readme/match.png'>
+<img src='./app/public/assets/readme/match.PNG'>
