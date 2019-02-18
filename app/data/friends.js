@@ -46,6 +46,69 @@ module.exports = [
             3,
             4
         ]
-    }
-
+    },
+    {
+        "name": "Bob Ross",
+        "photo": "https://i.kym-cdn.com/photos/images/original/001/039/580/54d.jpg",
+        "scores": [
+            1,
+            2,
+            4,
+            3,
+            1,
+            5,
+            3,
+            1,
+            2,
+            5
+        ]
+    },
+    {
+        "name": "Gabe Newell",
+        "photo": "https://cdn.vox-cdn.com/thumbor/jjpavgFcIdBwtac9KLIeQqQA-Sk=/0x0:3328x2151/1200x800/filters:focal(1416x1363:1948x1895)/cdn.vox-cdn.com/uploads/chorus_image/image/52780275/Gabe_Newell.0.0.jpg",
+        "scores": [
+            1,
+            2,
+            4,
+            3,
+            1,
+            5,
+            3,
+            1,
+            2,
+            5
+        ]
+    },
+    {
+        "name": "Simple Jack",
+        "photo": "https://pbs.twimg.com/media/DQpWAyHX4AEfdzW.jpg",
+        "scores": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+        ]
+    },
+    {
+        "name": "Suleiman the Magnificent",
+        "photo": "https://thumbs-prod.si-cdn.com/4eqvW8qnQwVN5Wr4kVCN2ZXr4tg=/800x600/filters:no_upscale()/https://public-media.si-cdn.com/filer/e9/d5/e9d5d756-c7d1-4b06-8670-76d119f1fd4e/42-57988375.jpg",
+        "scores": [
+            4,
+            3,
+            2,
+            1,
+            1,
+            2,
+            3,
+            4,
+            2,
+            5
+        ]
+    },
 ]
