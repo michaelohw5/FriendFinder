@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="assets/css/styles.css" type="text/css" rel="stylesheet">
+    <title>Survey</title>
+</head>
+
+<body>
+    <div class="container text-center mt-4">
+        <div class="jumbotron">
+            <h4>Name (Required)</h4>
+            <input type="text" id="name" class="form-control">
+
+            <h4>Link to Photo Image (Required)</h4>
+            <input type="text" id="photo" class="form-control mb-4">
+
+            <div class="questions mb-3">
+                <h4>Question 1</h4>
+                <h4>Do you like video games?</h4>
+                <select id="q1">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="questions mb-3">
+                <h4>Question 2</h4>
+                <h4>Do you like quiet places?</h4>
+                <select id="q2">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="questions mb-3">
+                <h4>Question 3</h4>
+                <h4>Do you like trying new food?</h4>
+                <select id="q3">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="questions mb-3">
+                <h4>Question 4</h4>
+                <h4>Are you an animal person?</h4>
+                <select id="q4">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="questions mb-3">
+                <h4>Question 5</h4>
+                <h4>Do you like pho?</h4>
+                <select id="q5">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="questions mb-3">
+                <h4>Question 6</h4>
+                <h4>Do you like Sci-fi over Fantasy?</h4>
+                <select id="q6">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="questions mb-3">
+                <h4>Question 7</h4>
+                <h4>Do you like running?</h4>
+                <select id="q7">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="questions mb-3">
+                <h4>Question 8</h4>
+                <h4>Do you like water sports?</h4>
+                <select id="q8">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="questions mb-3">
+                <h4>Question 9</h4>
+                <h4>Do you like html?</h4>
+                <select id="q9">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="questions mb-3">
+                <h4>Question 10</h4>
+                <h4>Do you like javascript?</h4>
+                <select id="q10">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <button id="submit" class="btn btn-large btn-primary mt-2">Submit</button>
+        </div>
+
+    </div>
+
+
+    <div class="modal fade" id="matchModal" tabindex="-1" role="dialog" aria-labelledby="matchModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Best Match!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2 id="match-name"></h2>
+                    <hr>
+                    <br>
+                    <img class="match-image" id="match-image">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <script>
+        $("#submit").on("click", function () {
+            event.preventDefault();
+
+            //validates the form so that every input boxes
+            function validateForm() {
+                var isValid = true;
+                $(".form-control").each(function () {
+                    if ($(this).val() === "") {
+                        isValid = false;
+                    }
+                })
+                return isValid;
+            }//================================================
+
+            if (validateForm()) {
+                var userData = {
+                    "name": $("#name").val(),
+                    "photo": $("#photo").val(),
+                    "scores": [
+                        $("#q1").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
+                        $("#q4").val(),
+                        $("#q5").val(),
+                        $("#q6").val(),
+                        $("#q7").val(),
+                        $("#q8").val(),
+                        $("#q9").val(),
+                        $("#q10").val()
+                    ]
+                }
+                console.log(userData);
+
+                $.post("api/friends", userData, function (data) {
+                    console.log(data);
+
+                    $("#match-image").attr("src", data.photo);
+                    $(".match-image").css("height", "100%");
+                    $(".match-image").css("width", "100%");
+                    $("#matchModal").modal();
+                })
+
+            } else {
+                alert("Please fill in name and image url fields.");
+            }
+        });
+    </script>
+
+</body>
+
+
+
+</html>
