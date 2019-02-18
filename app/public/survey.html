@@ -202,6 +202,7 @@
                 $.post("api/friends", userData, function (data) {
                     console.log(data);
 
+                    $("#match-name").text(data.name);
                     $("#match-image").attr("src", data.photo);
                     $(".match-image").css("height", "100%");
                     $(".match-image").css("width", "100%");
